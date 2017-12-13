@@ -132,6 +132,9 @@ PRODUCT_PACKAGES += \
     libbt-vendor \
     libbthost_if \
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/interop_database.conf:system/etc/interop_database.conf \
+
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl-legacy \
